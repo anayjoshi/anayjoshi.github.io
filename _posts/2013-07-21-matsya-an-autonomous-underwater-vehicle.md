@@ -2,6 +2,7 @@
 layout: post
 title: Matsya - An Autonomous Underwater Vehicle
 category: posts
+permalink: matsya-an-autonomous-underwater-vehicle
 ---
 
 As I write this post, I am sitting in front of **Matsya 2.0**, an Autonomous Underwater Vehicle (AUV) on which I have been working for about one and a half years, as a part of the [AUV-IITB](http://www.auv-iitb.org) Team. It was a treat working with the team all this time! Here is an image of Matsya, swimming in the competition arena at [Robosub](http://www.auvsifoundation.org/foundation/competitions/robosub)

@@ -9,9 +9,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               AKJ
-tagline:             'web presence'
-description:         'A blog dominated by technology'
+title:               Anay Joshi
+tagline:             ''
+description:         'Pop ups in my brain'
 url:                 http://anayjoshi.com
 baseurl:             /
 paginate:            100
@@ -19,5 +19,5 @@ paginate:            100
 # About/contact
 author:
   name:              Anaykumar Joshi
-  url:               https://twitter.com/AnaykumarJoshi
+  url:               https://twitter.com/sudo
   email:             anaykumar.joshi@gmail.com

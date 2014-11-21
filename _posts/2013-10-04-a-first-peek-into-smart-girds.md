@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "A First Peek into Smart Grids"
+title: A First Peek into Smart Grids
 category: posts
+permalink: a-first-peek-into-smart-grids
 ---
 
 It has been really long since I debuted with my first blog post a few months back! I had to post something today, just to give a sense of liveliness to the blog. Broadcasting my whereabouts would be a good idea I thought :)

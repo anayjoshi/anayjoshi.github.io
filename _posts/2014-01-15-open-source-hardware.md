@@ -1,8 +1,8 @@
 ---
-layout: post
 title: Open Source Hardware
 category: posts
-published: true
+layout: post
+permalink: open-source-hardware
 ---
 
 Open source software is all over the place! [Linux](https://github.com/torvalds/linux), [Firefox](http://www.mozilla.org/en-US/firefox), [Twitter](http://twitter.github.io/) .. you name a genre and you ought to find some open source lying around! The very fact that a lot of quality software is open to be looked at, provides amateurs such as myself, with a wonderful opportunity to improve our own software skills! On a personal note, one of the prime reasons why I happened to become more familiar with software than electronics hardware is because there was this big repository of **quality resources** thanks to the open source movement. Mind you, I am not a violent propagator of open source software and I respect *quality closed source software* all the same; just that the open source projects have taught me a lot.

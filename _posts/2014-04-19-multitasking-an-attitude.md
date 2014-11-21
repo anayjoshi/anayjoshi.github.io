@@ -1,8 +1,8 @@
 ---
-title: "Multitasking - an Attitude"
+title: Multitasking - an Attitude
 category: posts
 layout: post
-published: true
+permalink: multitasking-an-attitude
 ---
 
 Working at a startup has its pluses and minuses. What I considered a minus some weeks back, is something I have started to really enjoy off late! I refering to the art of **Multitasking**.

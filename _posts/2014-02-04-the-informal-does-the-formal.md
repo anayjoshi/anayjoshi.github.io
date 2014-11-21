@@ -1,7 +1,8 @@
 ---
-layout: post
 title: The Informal does the formal
+layout: post
 category: posts
+permalink: the-informal-does-the-formal
 ---
 
 You study a subject formally, (maybe in a degree program), and end up not touching it for the rest of your life. On the contrary, some skill which you never quite *studied*, but which you acquired from work  .. ends up giving you bread, butter and maybe some jam.
