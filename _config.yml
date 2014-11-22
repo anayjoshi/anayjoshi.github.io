@@ -9,9 +9,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Anay
+title:               Anay Joshi
 tagline:             ''
-description:         'Pop ups in my brain'
+description:         ''
 url:                 http://anayjoshi.com
 baseurl:             /
 paginate:            100
