@@ -9,7 +9,7 @@ Open source software is all over the place! [Linux](https://github.com/torvalds/
 
 Alright, enough of software.
 
-![Open Hardware]({{site.url}}/img/oshw-logo.png)
+![Open Hardware](/img/oshw-logo.png)
 
 Say hello to the [Open Source Hardware Movement](http://freedomdefined.org/OSHW)! For a few years now, hardware has been following the footsteps of software and this is an exciting time to live in! Quality resources (open sourced PCB schematics, layouts, component libraries) are pouring in like never before .. [Upverter](http://www.upverter.com), [Raspberry Pi](http://www.raspberrypi.org/), [Arduino](http://github.com/arduino), [Sparkfun](http://github.com/sparkfun), [Adafruit](http://github.com/adafruit), [Dangerous Prototypes](http://dangerousprototypes.com/‎) are examples of participants in the movement. 
 

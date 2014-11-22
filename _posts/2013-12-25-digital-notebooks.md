@@ -11,7 +11,7 @@ I agree more than anyone else that documenting experiments and thoughts is a mus
 We are moving towards a paperless world and we have all the reason to do so. Digital notebooks bring about a **paradigm shift** in the way we store and think of information. They give us the flexibility of backing up notes, the flexibility of accessing notes on multiple devices, the flexibility of sharing information seamlessly, the flexibility of peacefully reorganising information, and a hell lot more.
 Having failed at using physical notebooks as an effective way of storing information, I searched for digital alternatives. [Evernote](http://www.evernote.com), [Simplenote](http://www.simplenote.com), [nvAlt](http://brettterpstra.com/projects/nvalt/) seem to be some of the popular names. Even neatly organized plain text files should do a better job than paper!
 
-![Evernote]({{site.url}}/img/evernote.jpeg)
+![Evernote](/img/evernote.jpeg)
 
 
 Summary? Digital Notebooks are a great way of organising thoughts and information. Give it a shot :)
