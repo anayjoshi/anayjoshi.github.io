@@ -3,6 +3,7 @@ layout: post
 title: Connecting two dots
 category: posts
 permalink: connecting-two-dots
+summary: The connection between math olympiad and embedded software
 ---
 
 From as far as I remember, I have been in love with discrete mathematics. Some of my most intellectually satisfying experiences have been in attempting to solve problems of the math olympiad genre. The underlying principles to solve a typical olympiad problem are terribly (perhaps embarrassingly) simple, but the solution requires a strange insight. As a tenth grader, the first problem which introduced me to olympiad was this one:

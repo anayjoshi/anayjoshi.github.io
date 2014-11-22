@@ -3,6 +3,7 @@ title: Black Box Infrastructures
 category: posts
 layout: post
 permalink: black-box-infrastructures
+summary: My perspective on identifying the next big technology revolution
 ---
 
 I am fascinated by internet routers. Every time I stare at them, I can't help but appreciate their *simple* user interface. A router probably is a classic example of **Black Box Products**. It simply needs to be plugged into the network, and with very little configuration, it becomes a gateway to the internet. That's incredible isn't it ?
