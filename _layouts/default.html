@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
   {% include head.html %}
 
   <body>
 
-   
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
+    <div class="container content">
       <div class="masthead">
-        <div class="container">
-          <h2 class="masthead-title">
-            
-            <a href="/" title="Home">{{ site.title }}</a>
+        <h3 class="masthead-title">
+          <a href="/" title="Home">{{ site.title }}</a>
+            <small>{{ site.tagline }}</small>
             <small>{{ site.tagline }}</small>
               &nbsp;&nbsp;&nbsp;
               <small><a href="/colophon">Colophon</a></small>
@@ -22,34 +17,17 @@
               <small><a href="/archive">Archive</a></small>
               &nbsp;&nbsp;&nbsp;
               <small><a href="/resources">Resources</a></small>
-          </h2>
-
-        </div>
+        </h3>
       </div>
 
+      {{ content }}
 
-      <div class="container content">
-        {{ content }}
+      <div class="footer">
+        <p>
+          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+        </p>
       </div>
     </div>
 
-
-    <script>
-      (function(document) {
-        var toggle = document.querySelector('.sidebar-toggle');
-        var sidebar = document.querySelector('#sidebar');
-        var checkbox = document.querySelector('#sidebar-checkbox');
-
-        document.addEventListener('click', function(e) {
-          var target = e.target;
-
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
-
-          checkbox.checked = false;
-        }, false);
-      })(document);
-    </script>
   </body>
 </html>
