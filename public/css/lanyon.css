@@ -302,14 +302,15 @@ a.sidebar-nav-item:focus {
   margin-bottom: 4em;
 }
 
-/* Blog post or page title */
+/* Blog post or page title 
 .page-title,
-.post-title,
-.post-title a {
+.post-title,*/
+.post-title-in-list a {
   color: #3367D6;
 }
 .page-title,
-.post-title {
+.post-title,
+.post-title-in-list {
   margin-top: 0;
 }
 

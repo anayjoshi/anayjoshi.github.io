@@ -3,7 +3,7 @@ title: Multitasking - an Attitude
 category: posts
 layout: post
 permalink: multitasking-an-attitude
-summary: my nemesis
+summary: .. and my nemesis
 ---
 
 Working at a startup has its pluses and minuses. What I considered a minus some weeks back, is something I have started to really enjoy off late! I refering to the art of **Multitasking**.

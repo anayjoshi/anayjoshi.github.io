@@ -1,0 +1,11 @@
+digraph
+{
+	rankdir = LR;
+	node[shape="oval"] good_code[label="Good software \nto look at"];
+	node[shape="oval"] amateurs_learn[label="Amateurs learn"];
+	node[shape="oval"] more_experts_on_earth[label="More Experts\n on Earth"];
+
+	good_code -> amateurs_learn;
+	amateurs_learn -> more_experts_on_earth;
+	more_experts_on_earth -> good_code;
+}
