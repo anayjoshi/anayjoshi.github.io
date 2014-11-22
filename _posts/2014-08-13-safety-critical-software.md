@@ -9,7 +9,7 @@ Let me start off by insulting myself. I have been programming for about 3 years 
 
 It surprises me that despite the heights man has reached in most disciplines of science & engineering, we have not yet understood how to write quality software! We can fabricate silicon chips housing billions of transistors, we can build transatlantic bridges, we can dig the seabed for oil. In front of these engineering miracles, writing quality software should appear a cake walk! Apparently, it isn't.
 
-![all-your-bug-are-belong-to-me]({{site.url}}/img/all-your-bug-are-belong-to-me.png)
+![all-your-bug-are-belong-to-me](/img/all-your-bug-are-belong-to-me.png)
 
 It is in the very nature of software programs to fail. Grey hair around the world have been trying their best to reduce the number of these failures. Languages such as [Ada](http://en.wikipedia.org/wiki/Ada_(programming_language\)) have been specifically designed for safety critical applications. **C** has been subsetted by [MISRA-C](http://www.embedded.com/electronics-blogs/beginner-s-corner/4023981/Introduction-to-MISRA-C) guidelines to reduce the probability of programs failing. Unit testing and code coverage have become unquestionable. People have tried to build processes to mathematically model and prove that a given software implementation works. It is a great game between the program and the programmer. The program by nature, finds pitfalls to fail, and the programmer tries to fill in all gaps. Its indeed a game, but when the program starts winning, trust me .. it is not fun.
 
