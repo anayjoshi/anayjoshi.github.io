@@ -32,5 +32,5 @@ This page lists some quality technical resources on Mathematics, Electronics and
 
 - [Problem Solving Strategies](http://www.amazon.in/Problem-Solving-Strategies-Problem-Books-Mathematics/dp/0387982191) book by Arthur Engel, on Math Olympiad training
 - [Project Euler](https://projecteuler.net/): a beautiful collection of problems (math + cs)
-- [Men of Mathematics(): a treatise on the history of mathematics
+- [Men of Mathematics](): a treatise on the history of mathematics
 
