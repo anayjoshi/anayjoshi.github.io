@@ -2,7 +2,7 @@
 title: Multitasking - an Attitude
 category: posts
 layout: post
-permalink: multitasking-an-attitude
+permalink: blog/multitasking-an-attitude
 summary: .. and my nemesis
 ---
 

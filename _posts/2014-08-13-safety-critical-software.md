@@ -2,7 +2,7 @@
 title: Safety Critical Software
 category: posts
 layout: post
-permalink: safety-critical-software
+permalink: blog/safety-critical-software
 summary: When good software isn't good enough!
 ---
 

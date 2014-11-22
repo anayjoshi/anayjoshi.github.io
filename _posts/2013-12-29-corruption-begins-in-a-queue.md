@@ -2,7 +2,7 @@
 layout: post
 title: Corruption Begins in a Queue
 category: posts
-permalink: corruption-begins-in-a-queue
+permalink: blog/corruption-begins-in-a-queue
 summary: My long standing complaint against all human queues!
 ---
 IIT Bombay annually hosts a cultural festival by the name [Mood Indigo](http://moodi.org). It is a fairly well organised event and for most parts of it, it is an enjoyable event. However, for festivals such as Mood Indigo, my experience in standing in queues has not been as pleasant. Here's why ..

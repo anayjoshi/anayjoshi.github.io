@@ -2,7 +2,7 @@
 title: Black Box Infrastructures
 category: posts
 layout: post
-permalink: black-box-infrastructures
+permalink: blog/black-box-infrastructures
 summary: My perspective on identifying the next big technology revolution
 ---
 

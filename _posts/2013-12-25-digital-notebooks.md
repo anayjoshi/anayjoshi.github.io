@@ -2,7 +2,7 @@
 layout: post
 title: Digital Notebooks
 category: posts
-permalink: digital-notebooks
+permalink: blog/digital-notebooks
 summary: Drawbacks of paper note-keeping and why I prefer the digital world for note keeping
 ---
 Back in IIT Bombay, I had taken up a course called **EDL: Electronics Design Laboratory** in my 6th semester. The course was on developing an electronics intensive product. The course had no lectures, no exams. The only deliverable was a product which worked at the end of the course! The instructor of the course gave us examples of [Faraday’s Diary](http://www.faradaysdiary.com/) on a number of occasions to motivate us to document all our ideas and experiments in a notebook.

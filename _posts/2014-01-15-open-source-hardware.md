@@ -2,7 +2,7 @@
 title: Open Source Hardware
 category: posts
 layout: post
-permalink: open-source-hardware
+permalink: blog/open-source-hardware
 summary: Comments on what open source hardware has to offer
 ---
 

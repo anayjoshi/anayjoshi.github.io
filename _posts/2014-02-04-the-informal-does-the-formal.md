@@ -2,7 +2,7 @@
 title: The Informal does the formal
 layout: post
 category: posts
-permalink: the-informal-does-the-formal
+permalink: blog/the-informal-does-the-formal
 summary: On my college courses, which so far, have stayed back in college
 ---
 

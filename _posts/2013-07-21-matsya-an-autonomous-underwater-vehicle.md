@@ -2,7 +2,7 @@
 layout: post
 title: Matsya - An Autonomous Underwater Vehicle
 category: posts
-permalink: matsya-an-autonomous-underwater-vehicle
+permalink: blog/matsya-an-autonomous-underwater-vehicle
 summary: AUV developed at IIT Bombay
 ---
 

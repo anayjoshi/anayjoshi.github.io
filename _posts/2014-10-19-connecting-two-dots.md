@@ -2,7 +2,7 @@
 layout: post
 title: Connecting two dots
 category: posts
-permalink: connecting-two-dots
+permalink: blog/connecting-two-dots
 summary: The connection between math olympiad and embedded software
 ---
 
