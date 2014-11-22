@@ -13,11 +13,12 @@ title:               anayjoshi
 tagline:             '.com'
 description:         'A textual representation of pop-ups in my volatile memory'
 url:                 http://anayjoshi.com
+production_url:      http://anayjoshi.com
 baseurl:             /
 paginate:            100
 
 # About/contact
 author:
   name:              Anaykumar Joshi
-  url:               https://twitter.com/sudo
+  twitter:           https://twitter.com/AnaykumarJoshi
   email:             anaykumar.joshi@gmail.com

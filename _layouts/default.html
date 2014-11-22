@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:site" content="@{{ site.author.twitter }}">
+  <meta name="twitter:creator" content="@{{ site.author.twitter }}">
+    <meta name="twitter:description" content="{{ site.description }}">
   {% include head.html %}
+  {% include google_analytics.html %}
 
 
   <body>
@@ -22,7 +28,7 @@
 
       <div class="container content">
         {{ content }}
-        {% include comments.html %}
+
       </div>
     </div>
 
