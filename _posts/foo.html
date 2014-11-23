@@ -1,0 +1,222 @@
+<p>SPICE is an indispensable tool for simulating integrated circuits. Here, however, we would look at the SPICE as a tool for developing embedded electronics. Simulation always brings in some sanity and confidence in the head of the designer. That is precisely the goal of this tutorial series. Sanity.</p>
+<p>SPICE provides 4 basic analysis</p>
+<ol style="list-style-type: decimal">
+<li><strong>OP</strong>: (Operating Point analysis) Determine the steady state operating point of the circuit under simulation. Example, this analysis helps determine the quiescent voltage and current of say, a transistor amplifier.</li>
+<li><strong>DC</strong>: In this analysis, the source input voltage of a circuit is varied over a range (say from 1V to 5V) and the behaviour of the circuit is observed over this range. Example, this can help determine the range over which a transistor remains in linear mode.</li>
+<li><strong>AC</strong>: The frequency of a voltage source is varied over a range of frequencies and behaviour of the circuit is observed over this frequency range. Example, this can help plot the frequency response of a RC filter</li>
+<li><strong>Transient</strong>: This analysis helps observe the behaviour of a circuit over time. Example, plotting the response of a circuit to a pulse input</li>
+</ol>
+<p>We would go over each of the above mentioned analysis with simple examples.</p>
+<h2 id="introducing-op-and-dc">Introducing OP and DC</h2>
+<p>Let's start with the simplest form of analysis: Operating Point Analysis. SPICE performs this analysis before performing any other analysis.</p>
+<div class="figure">
+<img src="/img/spice_res_diode_circuit.png" alt="Resistor-Diode-DC-Circuit" /><p class="caption">Resistor-Diode-DC-Circuit</p>
+</div>
+<pre><code>    Resistor and Diode 
+
+    R1 n1 n2 1K
+    D1 n2 0
+    V0 n1 0 DC 3V
+    .end</code></pre>
+<p>Save this file as <strong>ckt1.cir</strong>. SPICE files are conventionally stored with the <strong>.cir</strong> extension. Names of nodes in the circuit start with <strong>n</strong>. First line of the file is the Title Line, and the last line of the file should be <strong>.end</strong>. The syntax for describing of the basic components is as shown</p>
+<pre><code>    Resistor: R&lt;name&gt; &lt;node 1&gt; &lt;node 2&gt; value
+    Diode: D&lt;name&gt; &lt;anode&gt; &lt;cathode&gt; &lt;model name&gt;
+    Voltage source: V&lt;name&gt; &lt;pos&gt; &lt;neg&gt; DC &lt;value&gt; AC &lt;value&gt;
+    Inductor: L&lt;name&gt; &lt;node 1&gt; &lt;node 2&gt; value
+    Capacitor: C&lt;name&gt; &lt;node 1&gt; &lt;node 2&gt; value</code></pre>
+<p>SPICE understands that <code>1K</code> is one thousand. Shown below is a description of the units SPICE understands.</p>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="43%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">SPICE Symbol</th>
+<th align="left">Value in Scientific Notation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>T</p></td>
+<td align="left"><pre><code>                    1E12</code></pre></td>
+</tr>
+<tr class="even">
+<td align="left"><p>G</p></td>
+<td align="left"><pre><code>                     1E9</code></pre></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>MEG</p></td>
+<td align="left"><pre><code>                     1E6</code></pre></td>
+</tr>
+<tr class="even">
+<td align="left"><p>K</p></td>
+<td align="left"><pre><code>                     1E3</code></pre></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>M</p></td>
+<td align="left"><pre><code>                    1E-3</code></pre></td>
+</tr>
+<tr class="even">
+<td align="left"><p>U</p></td>
+<td align="left"><pre><code>                    1E-6</code></pre></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>N</p></td>
+<td align="left"><pre><code>                    1E-9</code></pre></td>
+</tr>
+<tr class="even">
+<td align="left"><p>P</p></td>
+<td align="left"><pre><code>                   1E-12</code></pre></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>F</p></td>
+<td align="left"><pre><code>                   1E-15</code></pre></td>
+</tr>
+</tbody>
+</table>
+<p>Now, fire up <code>ngspice</code> in a terminal and execute the following</p>
+<pre><code>    ngspice -&gt; source ckt1.cir
+    ngspice -&gt; op
+    ngspice -&gt; show d1</code></pre>
+<p><strong>op</strong> does the operating point analysis of the circuit; <strong>show d1</strong> displays the operating point of :math:<code>D_1</code>.</p>
+<pre><code>    ngspice -&gt; show D1
+
+    Diode: Junction Diode model
+    device                    d1
+    model                     D
+    vd              0.676901
+    id            0.00232313
+    gd             0.0898203
+    cd                     0</code></pre>
+<p>Similarily, you can try out</p>
+<pre><code>    ngspice -&gt; show r1
+    ngspice -&gt; show vcc
+    ngspice -&gt; show</code></pre>
+<p>The last <strong>show</strong> command displays operating point of all circuit elements in the circuit.</p>
+<p>To perform a DC sweep analysis, run the following</p>
+<pre><code>    ngspice -&gt; dc vcc 0V 5V 0.01V
+    ngspice -&gt; plot v(n2)</code></pre>
+<p>The syntax for describing DC analysis is</p>
+<pre><code>    ngspice -&gt; dc v&lt;name&gt; &lt;vstart&gt; &lt;vstop&gt; &lt;vstep&gt;</code></pre>
+<p>This sweeps the voltage source from :math:<code>0V</code> to :math:<code>5V</code> in steps of :math:<code>0.01V</code> &amp; plots the voltage at <strong>n2</strong> for this sweep. This results in the plot shown below</p>
+<p>.. image:: /_static/spice/dc-plot-ckt1.png :height: 400 :width: 600 :align: center</p>
+<p>Similarily, try running the following</p>
+<p>.. code-block:: console</p>
+<pre><code>ngspice -&gt; plot i(vcc)
+ngspice -&gt; plot i(r1)
+ngspice -&gt; plot (v(n1) - v(n2))/10K</code></pre>
+<p>You might observe that <strong>i(vcc)</strong> works, but <strong>i(r1)</strong> doesn't (ngpice says &quot;<em>no such function as i</em>&quot;). Apparently, ngspice only allows plotting current though independent voltage sources. The command <strong>plot (v(n1)-v(n2))/10k</strong> effectively plots current through :math:<code>R_1</code></p>
+<p>Introducing TRAN and AC ***********************</p>
+<p>AC analysis and TRAN analysis only make sense for circuits containing reactive elements (capacitors and inductors). For circuits containing purely resistors, diodes, transistors and current/voltage source (ignoring parasitic capacitive and inductive effects) , you should only perform OP and DC analysis as the voltage and current for such curcuits would be time independent.</p>
+<p>Let us now simulate a simple RC filter.</p>
+<p>.. image:: /_static/spice/ckt2.png :height: 300 :width: 400 :align: center</p>
+<p>Let's start off with <em>transient analysis</em>.</p>
+<p>.. code-block:: console</p>
+<pre><code>RC low pass filter
+
+R1 n1 n2 1K
+C1 n2 0 10nF
+V0 n1 0 PULSE(-1 1 20US 0US 0US 100US 200US)
+.end</code></pre>
+<p>Save the above circuit as <strong>ckt2-tran.cir</strong>. The voltage source is a periodic pulse train. The syntax for specifying a pulse train is as follows:</p>
+<p>.. code-block:: console</p>
+<pre><code>Vname N1 N2 PULSE(V1 V2 TD TR TF PW Period)
+
+where,
+
+V1 = initial voltage value
+V2 = pulse voltage value
+TD = delay before first change fron V1 to V2
+TR = rise time
+TF = fall time
+PW = pulse width
+Period = time period of the pulse train</code></pre>
+<p>Now, run the following analysis</p>
+<p>.. code-block:: console</p>
+<pre><code>ngspice -&gt; source ckt2-tran.cir
+ngspice -&gt; tran 1us 1ms
+ngspice -&gt; plot v(n2)</code></pre>
+<p>.. image:: /_static/spice/tran-plot-ckt2.png :height: 400 :width: 600 :align: center</p>
+<p>The syntax for running transient analysis is</p>
+<p>.. code-block:: console</p>
+<pre><code>tran &lt;tstep&gt; &lt;tstop&gt; &lt;tstart&gt;</code></pre>
+<p>Finally, let us carry out <em>AC analysis</em>. The circuit for this analysis is the same as the one for transient analysis, except that the voltage source would be sinusoidal.</p>
+<p>.. code-block:: console</p>
+<pre><code>RC low pass filter
+
+R1 n1 n2 1K
+C1 n2 0 10nF
+V0 n1 0 AC
+.end</code></pre>
+<p>Save the above circuit as <strong>ckt2-ac.cir</strong>. Recall that <em>AC analysis</em> is all about varying the input voltage frequency over a range. Since we are dealing with linear circuits, the frequency of voltage and current at all nodes and loops in the circuit would have the same frequency (at steady state). SPICE provides a variety of ways of sweeping through a frequency range</p>
+<ul>
+<li>linear sweep</li>
+<li>decade sweep</li>
+<li>octate sweep</li>
+</ul>
+<p>We will just look at linear sweep. The syntax for specifying linear sweep is:</p>
+<p>.. code-block:: console</p>
+<pre><code>ac lin NumberOfPoints StartFreq EndFreq</code></pre>
+<p>As an example,</p>
+<p>.. code-block:: console</p>
+<pre><code>ngspice -&gt; source ckt2-ac.cir
+ngspice -&gt; ac lin 1000 1 1k
+ngspice -&gt; plot abs(v(n2))</code></pre>
+<p>.. image:: /_static/spice/ac-plot-ckt2.png :height: 400 :width: 600 :align: center</p>
+<p>Semiconductor devices require <code>.model</code> line.</p>
+<p>.. code-block:: console</p>
+<pre><code>.model &lt;name&gt; &lt;type&gt; (par1=value1 par2=value2 ...)
+
+.control
+FIRST COMMAND
+          ...
+LAST COMMAND
+.endc</code></pre>
+<p>Basic 3: Introducing MODELs ***************************</p>
+<p>Not all diodes are the same of course, and spice provides a way to parametrize devices. As an example, we can represent a diode, say <code>1N4004</code> as follows:</p>
+<p>Basic 4: Small signal amplifier using BJT *****************************************</p>
+<pre><code>Bipolar transistor: Q&lt;name&gt; &lt;collector&gt; &lt;base&gt; &lt;emitter&gt; &lt;model name&gt;</code></pre>
+<p>Model syntax:</p>
+<p>.. code-block:: console</p>
+<pre><code>.MODEL BJT_modName NPN (BF=val IS=val VAF=val)</code></pre>
+<p>in which</p>
+<pre><code>BF = common emitter current gain (beta); default = 100
+IS = saturation current; default = 1E-16A
+VAF = Early voltage; default = inifite</code></pre>
+<p>Basic 5: A MOSFET switch ************************</p>
+<p>Basic 6: Introducing Subcircuits ********************************</p>
+<p>Intermediate 1: ***************</p>
+<p>You can nest the DC sweep command which is often used to plot transistor characteristics, such as the Drain current ids versus the Drain-source voltage Vds for different gate voltages Vgs. This can be done as follows:</p>
+<p>.. code-block:: console</p>
+<pre><code>.DC SRCname1 START STOP STEP SRCname2 START STOP STEP</code></pre>
+<p>.. code-block:: console</p>
+<pre><code>Example: .DC Vds 0 5 0.5 Vgs 0 5 1</code></pre>
+<p>In the example above, the voltage Vds will be swept from 0 to 5V in steps of 1V for every value of Vgs.</p>
+<ul>
+<li>SPICE requires that every node in a circuit have a DC path to ground. Be careful when, for example, connecting two capacitors at a node. Such a node between caps would have no DC path to ground and would cause SPICE to reject the input file. To fix this connect a huge (ie 1 G-ohm or so resistor from the node in question to ground.</li>
+</ul>
+<h2 id="file-format">File Format</h2>
+<ol start="2" style="list-style-type: decimal">
+<li>Element lines: describe the components and how they are connected into a network;</li>
+<li>Comment lines: start with a '*' and are ignored by SPICE</li>
+<li>Control lines: tell SPICE what type(s) of analysis; to perform on the circuit and how results are to be displayed;</li>
+</ol>
+<h2 id="example">Example</h2>
+<pre><code>LPFILTER.CIR - SIMPLE RC LOW-PASS FILTER
+*
+VS  1   0   AC  1   SIN(0VOFF 1VPEAK   2KHZ)
+*
+R1  1   2   1K
+C1  2   0   0.032UF 
+*
+* ANALYSIS
+.AC     DEC     5 10 10MEG
+.TRAN   5US  500US
+*
+* VIEW RESULTS
+.PRINT  AC  VM(2) VP(2)
+.PRINT  TRAN    V(1) V(2)
+*
+.PROBE
+.END</code></pre>
