@@ -1,6 +1,6 @@
 # Lets Make
 
-$@, $<, @, $*, $^, phony targets, .PHONY clean or $(phony clean), phony can be used to run tests or to push to github etc. variables (macros), pattern rules, DAG, timestamping, patsubst, comments, all is phony, TAB, \, makedepend
+$@, $<, @, $*, $^, phony targets, .PHONY clean or $(phony clean), phony can be used to run tests or to push to github etc. variables (macros), pattern rules, DAG, timestamping, patsubst, comments, all is phony, TAB, \, makedepend, wildcards
 
 $(function arg1 arg2 arg3 ...), patsubst, := vs =
 
