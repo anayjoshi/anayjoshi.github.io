@@ -2,7 +2,7 @@
 layout: post
 title: A First Peek into Smart Grids
 category: posts
-permalink: blog/a-first-peek-into-smart-girds
+permalink: blog/a-first-peek-into-smart-grids
 summary: On how I ended up joining Gram Power
 ---
 
