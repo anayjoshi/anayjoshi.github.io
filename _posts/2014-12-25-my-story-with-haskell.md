@@ -2,7 +2,7 @@
 title: My story with Haskell. Thus far
 category: posts
 layout: post
-permalink: blog/haskell
+permalink: blog/my-story-with-haskell
 summary: On how this language changed the way I program
 ---
 
