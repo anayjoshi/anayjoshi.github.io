@@ -3,7 +3,7 @@ title: My story with Haskell. Thus far
 category: posts
 layout: post
 permalink: blog/haskell
-summary: On how this language has changed the way I program
+summary: On how this language changed the way I program
 ---
 
 > Functional Languages is the Queen of Programming Languages, and Haskell is the Queen of Functional Languages
@@ -11,7 +11,7 @@ summary: On how this language has changed the way I program
 
 ## Chapter 1. Haskell knocks the door
 
-In my final year at college, I was starting to pump out code and I was in search for a tool to help manage all those terminal instance. A friend suggested [xmonad](http://xmonad.org/), a tiling window manager. I played around with it for a week or so, but I eventually let it go. Anyways, while playing with xmonad, I discovered it was one of the more popular Haskell program out there. I had not heard of Haskell before. Now, I had.
+In my final year at college, I was starting to pump out code and I was in search for a tool to help manage all those terminal instances. A friend suggested [xmonad](http://xmonad.org/), a tiling window manager. I played around with it for a week or so, but I eventually let it go. While tinkering with xmonad, I discovered it was one of the more popular Haskell program out there. I had not heard of Haskell before. Now, I had.
 
 ## Chapter 2. Infatuation
 
@@ -65,7 +65,7 @@ After 10 chapters of [Learn you a Haskell](http://learnyouahaskell.com/chapters)
 
 ## Chapter 4. Reunion
 
-After spending countless hours with Python, I had started to enter the intermediate level of being a Pythonista. By now, *iterators*, *decorators*, *generators* were in my Python toolbox. I had come across a few blog posts which talked about *itertools* & how Haskell has influenced Python. Nostalgia. I was back on Haskell in my post office hours.
+After spending countless hours with Python, I had started to enter the intermediate level of being a Pythonista. By now, *iterators*, *decorators*, *generators* were in my Python toolbox. I had also suddenly started to come across blog posts which talked about *itertools* & how Haskell has influenced Python. Nostalgia. I was back on Haskell in my post office hours.
 
 ## Chapter 5. Love
 
@@ -94,13 +94,13 @@ instance Num (Complex) where
     (+) (Complex x1 y1) (Complex x2 y2) = Complex (x1+x2) (y1+y2)
 ```
 
-except that the Haskell program is statically typed (& type inferred). In short, Haskell's type system had blown my mind. I had fallen in love.
+Haskells `type variables`, `type classes`, `type constructors`, `type inference` were very new to my eye. In short, Haskell's type system had blown my mind. I had fallen in love.
 
 ## Chapter 6. Meditation
 
-*Monads*: Probably the most feared programming concept out there. I have still not quite wrapped my head around Haskell, but I feel much more confident now with the realization that Monads are probably not really all that difficult. In fact, I had rather comfortably used list comprehension during my infatuation without realising the monadic nature of list comprehension.
+*Monads*: Probably the most feared programming concept out there. I have still not quite wrapped my head around Haskell, but I feel much more confident now with the realization that Monads are probably not really all that difficult. In fact, I had rather comfortably used list comprehension during my infatuation days without realising the monadic nature of list comprehension.
 
-Say we want to find solutions to the Linear Diophantine Equation `5*x + 7*y = 100` where `x` and `y` are say positive integers. For Haskell, this is a trivial coin toss.
+Say we want to find solutions to the Linear Diophantine Equation `5*x + 7*y = 100` where `x` and `y` are positive integers. For Haskell, this is a trivial coin toss.
 
 ```haskell
 main = print [(x,y) | x <- [1..100], y <- [1..100], 5*x + 7*y == 100]
@@ -129,5 +129,5 @@ All these code snippets would print out `[(6,10),(13,5)]` on the screen. Monads 
 
 ## Summary
 
-I am a still a fledgeling in Haskell but I positively hope Haskell to suplant Python as my primary language. I like Python, but Haskell is in a different league. Reading about Haskell is a very humbling experience. Many a times, when Haskell becomes too heavy for me, I almost tend to leave it and go back to the more manageble languages. But it hurts my ego, and I keep coming back to Haskell to save my honor. Many a times, the only reason I read about monads is for the sake of my self respect! My story with haskell has been pretty elucidating thus far, and this story is going to be a long long one.
+I am a still a fledgeling in Haskell but I positively hope Haskell to supplant Python as my primary language. I like Python, but Haskell is in a different league. Reading about Haskell is a very humbling experience. Many a times, when Haskell becomes too heavy for me, I almost tend to leave it and go back to the more manageble languages. But it hurts my ego, and I keep coming back to Haskell to save my honor. Many a times, the only reason I read about monads is for the sake of my self respect! [This](http://www.xent.com/pipermail/fork/Week-of-Mon-20070219/044101.html) article is a perfect reflection of my emotions with Haskell. It seems my story with Haskell is going to be pretty darn long.
 
