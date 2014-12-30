@@ -78,3 +78,65 @@ head
 tail
 
 Axiomatically building a set of tools ! Very similar to mathematical approach :)
+
+
+## Returning None
+
+In Python, there are two ways primary ways to report errors: using `None` or using Exceptions. A Python function should return None if there is only one *obvious* failure case. Here is an example:
+
+```python
+def return_head(a_list):
+    if a_list:
+        return a_list[0]
+    else:
+        return None
+```
+
+```haskell
+returnHead :: [a] -> Maybe a
+returnHead [] = Nothing
+returnHead (x:xs) = Just x
+```
+
+## Polymorphisms
+
+In this regard, I feel Python and Haskell have quite something in common. Pythonistas prefer calling it **duck typing**, which essentially says that is something walks like a duck, talks like a duck, it is a duck. Look at the above code example again. Both, the Python and the Haskell implementations can take in lists of any type. `a_list` can be a list of strings, integers, or any darn object. Same is the case with Haskell.
+
+
+## Magic Methods
+
+```python
+class LatticePoint:
+
+    def __init__(self, x, y):
+        if not (isinstance(x, int) and isinstance(y, int)):
+            raise TypeError("coordinates should be of integer type")
+        self.x = x
+        self.y = y
+
+    def __repr__(self):
+        return "({}, {})".format(self.x, self.y)
+
+    def __add__(self, other):
+        return Point(self.x + other.x, self.y + other.y)
+
+if __name__ == "__main__":
+    print(LatticePoint(1, 3) + LatticePoint(5, 2))
+```
+
+```haskell
+data LatticePoint = LatticePoint {x :: Integer, y :: Integer}
+
+instance Num (LatticePoint) where
+    (+) (LatticePoint x1 y1) (LatticePoint x2 y2) = LatticePoint (x1+x2) (y1+y2)
+
+instance Show (LatticePoint) where
+    show (LatticePoint x y) = print "(" ++ x ", " ++ y ++ ")"
+
+main = do
+    print $ (LatticePoint 1 3) + (LatticePoint 5 2)
+```
+
+
+
+
