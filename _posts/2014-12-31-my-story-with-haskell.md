@@ -93,7 +93,7 @@ instance Num (Complex) where
 
 This is similar to saying that `Complex` is a subclass of `Num` & that `+` is a virtual function of the `Num` class.
 
-## Chapter 3. Brutality & Interlude
+## Chapter 3. Interlude
 
 Before Haskell entered my life, I had just begun to gain some confidence over my programming skills. Haskell told me how ignorant I was. Haskell lives in a parallel universe & its not just about *functional programming*. Other languages such as Lisp and ML are functional but are much more sobre than Haskell. Haskell, in its untiring aim to be a *pure functional language* is much more difficult to comprehend.
 
