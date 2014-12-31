@@ -15,7 +15,7 @@ In my final year at college, I was starting to pump out code and I was in search
 
 ## Chapter 2. Infatuation
 
-Haskell introduced me to functional programming, and I got hooked on to it. I had casually seen Lisp before, but code written in Lisp has that unfortunate overload of (((round) brackets)), and I had immediately taken my eyes off it. **Haskell has a beautiful syntax**. To be more accurate, *Haskell has a beautiful syntax for recursive problems*. When it comes to graphs, state machines etc, Haskell isn't exactly that pretty but lets ignore the marginal ugliness for now. If you have never seen Haskell before, look at the code below. The program shown computes the factors of a given number. This might not be the most efficient implementation, but heck, just look at it.
+Haskell introduced me to functional programming, and I got hooked on to it. I had casually seen Lisp before, but code written in Lisp has that unfortunate overload of (((round) brackets)), and I had immediately taken my eyes off it. **Haskell has a beautiful syntax**. If you have never seen Haskell before, look at the code below. The program shown computes the factors of a given number. This might not be the most efficient implementation, but heck, just look at it.
 
 ```haskell
 factors :: Integer -> [Integer]
@@ -32,7 +32,7 @@ main = do
     print $ factors 252
 ```
 
-If you run this program, it would print `[2,2,3,3,7]` on the screen. For reference, the Python equivalent (in the functional paradigm) for this code looks like this
+This would print `[2,2,3,3,7]` on the screen. For reference, the Python equivalent (in the functional paradigm) for this code looks like this
 
 ```python
 def factors(n):
@@ -55,17 +55,15 @@ if __name__ == "__main__":
     print factors(252)
 ```
 
-You might love Python just as I do, but I know you agree with me: functional code in Python looks rather ugly. 
+You might like Python just as I do, but I know you agree with me: functional code in Python looks rather ugly. 
 
-Plus, Haskell is *Oh, so Mathematical!*. Say we want to find solutions to the Linear Diophantine Equation `5*x + 7*y = 100` where `x` and `y` are positive integers. For Haskell, this is a trivial coin toss.
+I am fond of mathematics & Haskell is *Oh, so Mathematical!*. Say we want to find solutions to the Linear Diophantine Equation `5*x + 7*y = 100` where `x` and `y` are positive integers. For Haskell, this is a trivial coin toss.
 
 ```haskell
 main = print [(x,y) | x <- [1..100], y <- [1..100], 5*x + 7*y == 100]
 ```
 
-Beautiful!
-
-Haskell's type system is very different from every language I had seen before. Now I don't really have the credibility to compare Haskell's type system with many other languages, but the programming community in general agrees that Haskell has probably the best type system among all languages.
+Everything in Haskell was so different, I felt I was learning programming for the first time ever! For example, here is a glimpse of Haskell's type system.
 
 ```python
 class Complex:
@@ -92,21 +90,21 @@ instance Num (Complex) where
     (+) (Complex x1 y1) (Complex x2 y2) = Complex (x1+x2) (y1+y2)
 ```
 
-This is similar to saying that `Complex` is a subclass of `Num` & that `+` is a virtual function of the `Num` class. The analogy doesn't last long though. Haskell's `type variables`, `type classes`, `type constructors`, `type inference` were very new to my eyes & all this was damn exciting!
+This is similar to saying that `Complex` is a subclass of `Num` & that `+` is a virtual function of the `Num` class.
 
 ## Chapter 3. Brutality & Interlude
 
-Before Haskell, I had just begun to gain some confidence over my programming skills when Haskell told me how ignorant I was. Haskell lives in a parallel universe & its not just about *functional programming*. Other languages such as Lisp and ML are functional but are much more sobre than Haskell. Haskell, in its untiring aim to be a *pure functional language* is much more difficult to comprehend.
+Before Haskell entered my life, I had just begun to gain some confidence over my programming skills. Haskell told me how ignorant I was. Haskell lives in a parallel universe & its not just about *functional programming*. Other languages such as Lisp and ML are functional but are much more sobre than Haskell. Haskell, in its untiring aim to be a *pure functional language* is much more difficult to comprehend.
 
 After a few chapters of [Learn you a Haskell](http://learnyouahaskell.com/chapters) (which btw, is a fantastic resource to learn Haskell), I met `functors`, `applicative functors` & `monads`. I was bowled. More so because the [infinite web tutorials](https://www.haskell.org/haskellwiki/Monad_tutorials_timeline) on monads indicated that monads must be somewhat difficult. I had to take a break from Haskell. I was probably not prepared yet to see monads in its eyes.
 
 ## Chapter 4. Reunion
 
-Fast forward an year. At work, my primary language was Python. After spending countless hours with. By now, `iterators`, `decorators`, `generators` were in my Python toolbox. Occasionally, I started to come across blog posts which talked about `itertools` & how Haskell has influenced Python. Nostalgia. I was back on Haskell in my post office hours.
+Fast forward an year. At work, my primary language was Python. By now, `iterators`, `decorators`, `generators` were in my Python toolbox. I had seen elements of functional programming in Python by now. Occasionally, I started to come across blog posts which talked about `itertools` & how Haskell had influenced Python. Nostalgia. I was back on Haskell in my after office hours.
 
 ## Chapter 5. Love
 
-That's today. Here I am, madly in love with this language. Having attempted (and partially failed) to build complex software systems in C++ and Python, I can now appreciate Haskell's *purity*. I had previously [written](http://anayjoshi.com/blog/connecting-two-dots) on the importance of mathematics in programming; & for complicated programs, *function composition* seems to be **the** way to write programs. It seems so mathematically beautiful!
+That's today. Here I am, madly in love with this language. Having attempted (and partially failed) to build complex software systems in C++ and Python, I can now appreciate Haskell's *purity*. I had previously [written](http://anayjoshi.com/blog/connecting-two-dots) on the importance of mathematics in programming; for complicated programs, *function composition* seems to be **the** way to write programs!
 
-I am a still a fledgeling in Haskell but I positively hope Haskell to supplant Python as my primary language. I like Python, but Haskell is in a different league. Reading about Haskell is a very humbling experience. Many a times, when Haskell becomes too heavy for me, I almost tend to leave it and go back to the more manageble languages. But it hurts my ego, and I keep coming back to Haskell to save my honor. Many a times, the only reason I read about monads is for the sake of my self respect! [This](http://www.xent.com/pipermail/fork/Week-of-Mon-20070219/044101.html) article is a perfect reflection of my emotions with Haskell. It seems my story with Haskell is going to be pretty darn long!
+I am a still a fledgeling in Haskell but I positively hope Haskell to supplant Python as my primary language. I like Python, but Haskell is in a different league, a better league. Reading about Haskell is a very humbling experience. Many a times, when Haskell becomes too heavy for me, I almost tend to leave it and go back to the more manageble languages. But it hurts my ego, and I keep coming back to Haskell to save my honor. Many a times, the only reason I read about monads is for the sake of my self respect! [This](http://www.xent.com/pipermail/fork/Week-of-Mon-20070219/044101.html) article is a perfect reflection of my emotions with Haskell. It seems my story with Haskell is going to be pretty darn long!
 
