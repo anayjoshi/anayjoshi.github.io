@@ -5,6 +5,7 @@ layout: post
 permalink: blog/my-story-with-haskell
 summary: On how this language changed the way I program
 ---
+![Haskell Logo](/img/haskell-logo.png)
 
 > Functional Paradigm is the Queen of Programming Paradigms, and Haskell is the Queen of Functional Languages
 - *Hypothetical Gauss in the 21st Century*
@@ -100,7 +101,7 @@ After a few chapters of [Learn you a Haskell](http://learnyouahaskell.com/chapte
 
 ## Chapter 4. Reunion
 
-Fast forward an year. At work, my primary language was Python. By now, `iterators`, `decorators`, `generators` were in my Python toolbox. I had seen elements of functional programming in Python by now. Occasionally, I started to come across blog posts which talked about `itertools` & how Haskell had influenced Python. Nostalgia. I was back on Haskell in my after office hours.
+Fast forward an year. At work, my primary language was Python. By now, `iterators`, `decorators`, `generators` were in my Python toolbox. I had seen elements of functional & lazy programming in Python by now. Occasionally, I started to come across blog posts which talked about `itertools` & how Haskell had influenced Python. Nostalgia. I was back on Haskell in my after office hours.
 
 ## Chapter 5. Love
 
