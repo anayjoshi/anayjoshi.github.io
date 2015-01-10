@@ -141,7 +141,7 @@ Anyways, that is all that I have to say about decorators today. But here is a bo
 
 ```python
 def show_abc(a, b, c):
-    describe = "a: {}\nb: {}\nc: {}"
+    describe = "a: {}, b: {}, c: {}"
     print(describe.format(a, b, c))
 
 if __name__ == "__main__":
@@ -171,7 +171,7 @@ val = ["foo", "bar", 10]
 
 show_abc(*val)
 # is the same as calling
-# show_abc("foo", "bar", 2)
+# show_abc("foo", "bar", 10)
 ```
 
 ```python
@@ -181,7 +181,7 @@ val = {"a": "foo",
 
 show_abc(**val)
 # is the same as calling
-# show_abc(a="Art of Electonics", b="bar", c=2)
+# show_abc(a="Art of Electonics", b="bar", c=10)
 ```
 
 ```python
