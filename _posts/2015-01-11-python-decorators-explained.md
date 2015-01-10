@@ -8,7 +8,7 @@ summary: On decorators, one of the better concepts in Python
 
 There is something sanctimonious about functional programming. The functional approach to solve a problem just seems the holier way to write code. Python has been my default scripting language for quite sometime now, and fortunately, it is loaded well enough with functional tools to keep me happy. One of which, **decorators**, is the subject of today's discussion. I like to think of decorators as a tool for abstracting out common code. If you want to extract out common functionality from a family of functions to keep your code [DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself), decorators might just be the right fit. Lets look at a simple example, shall we?
 
-Say we have a family of functions, all of which return an integer. We can denote members of this family with names such as `f1`, `f2`, `f3` etc. These functions might not take in the same number of arguments though. You may visualize the **domain** as the super set of integers, and the **codomain** as the set of integers; but ofcourse, with Python's week typing system, you should not take the domains, codomains too seriously.
+Say we have a family of functions, all of which return an integer. We can denote members of this family with names such as `f1`, `f2`, `f3` etc. These functions might not take in the same number of arguments though. You may visualize the **domain** as the super set of integers, and the **codomain** as the set of integers; but ofcourse, with Python's duck typing system, you should not take the domains, codomains too seriously.
 
 ```python
 def f1():
