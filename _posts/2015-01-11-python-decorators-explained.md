@@ -1,5 +1,5 @@
 ---
-title: Python Decorators Explained
+a: Python Decorators Explained
 category: posts
 layout: post
 permalink: blog/python-decorators-explained
@@ -23,17 +23,15 @@ def f3(a, b):
 
 Say `S` represents the set holding this family of functions. Now, we can create a new function, with the name say `add_3`, whose domain & codomain is `S`; ie, `add_3(f)` belongs to `S` provided `f` belongs to `S`. We want `add_3` to behave as its name suggests. 
 
-If
-
 ```python
+# If
+
 g1 = add_3(f1)
 g2 = add_3(f2)
 g3 = add_3(f3)
-```
 
-then,
+# then,
 
-```python
 g1() == f1() + 3
 g2(x) == f2(x) + 3 # for all integers x
 g3(x, y) == f3(x, y) + 3 # for all integers x & y
@@ -142,63 +140,57 @@ Anyways, that is all that I have to say about decorators today. But here is a bo
 ## Argument Passing
 
 ```python
-def show_book(title, author, website):
-    describe = "Title: {}\nAuthor: {}\nWebsite: {}"
-    print(describe.format(title, author, website))
+def show_abc(a, b, c):
+    describe = "a: {}\nb: {}\nc: {}"
+    print(describe.format(a, b, c))
 
 if __name__ == "__main__":
-    show_book("Zero to One", "Peter Thiel", 
-              "http://zerotoonebook.com")
+    show_abc("foo", "bar", 10)
 ```
 
-You might know that in Python, function arguments can be passed either by *position*, or by *name*. You may as well have called `show_book` in any of the ways shown below:
+You might know that in Python, function arguments can be passed either by *position*, or by *name*. You may as well have called `show_abc` in any of the ways shown below:
 
 ```python
-show_book(title="Zero to One", 
-          author="Peter Thiel",
-          website="http://zerotoonebook.com")
+show_abc(a="foo", b="bar", c=10)
 
-show_book("Zero to One", author="Peter Thiel", 
-          website="http://zerotoonebook.com")
+show_abc("foo", b="bar", c=10)
 
-show_book("Zero to One", "Peter Thiel", 
-          website="http://zerotoonebook.com")
+show_abc("foo", "bar", c=10)
 ```
 
 However, the *positional* arguments must *always* precede *named* arguments. For example, argument passing shown below is invalid:
 
 ```python
-show_book(book="Zero to One", "Peter Thiel", 
-          "http://zerotoonebook.com")
+show_abc(a="foo", "bar", 10)
 ```
 
 To summarize, a function call should have a format similar to `function_name(positional arguments, named arguments)`. Python provides a way to pass positional arguments using *lists* & a way to pass named arguments using *dictionaries*. Here is how!
 
 ```python
-zero_to_one = ["Zero to One", "Peter Thiel", 2]
+val = ["foo", "bar", 10]
 
-show_book(*zero_to_one)
+show_abc(*val)
 # is the same as calling
-# show_book("Zero to One", "Peter Thiel", 2)
+# show_abc("foo", "bar", 2)
 ```
 
 ```python
-zero_to_one = {"title": "Zero to One", 
-               "author": "Peter Thiel", 
-               "website": "http://zerotoonebook.com"}
+val = {"a": "foo", 
+       "b": "bar", 
+       "c": 10}
 
-show_book(**zero_to_one)
+show_abc(**val)
 # is the same as calling
-# show_book(title="Art of Electonics", author="Peter Thiel", website=2)
+# show_abc(a="Art of Electonics", b="bar", c=2)
 ```
 
 ```python
-title_and_author = ["Zero to One", "Peter Thiel"]
-website = {"website": "http://zerotoonebook.com"}
+val1 = ["foo", "bar"]
+val2 = {"c": 10}
 
-show_book(*title_and_author, **website)
+show_abc(*val1, **val2)
 # is the same as calling
-# show_book("Zero to One", "Peter Thiel", website=2)
+# show_abc("foo", "bar", c=10)
 ```
 
 Now, we can probably connect the dots with the `wrapper` function which was discussed above.
