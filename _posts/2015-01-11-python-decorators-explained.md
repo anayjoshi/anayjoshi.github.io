@@ -72,7 +72,7 @@ if __name__ == "__main__":
     print(f3(4, 5), g3(4, 5))
 ```
 
-To simply garnish this code with some terminology, we can say that `add_3` function is a *decorator* which decorates functions `f1`, `f2`, `f3` and produces functions `g1`, `g2`, `g3` which are *decorated functions*. How about we simply don't talk about functions `g1`, `g2`, `g3`. How about we replace the code within the `if __name__ == "__main__` with:
+To simply garnish this code with some terminology, we can say that `add_3` function is a *decorator* which decorates functions `f1`, `f2`, `f3` and produces functions `g1`, `g2`, `g3` which are *decorated functions*. How about we simply don't talk about functions `g1`, `g2`, `g3`? How about we replace the code within the `if __name__ == "__main__` with:
 
 ```python
 f1 = add_3(f1)
@@ -107,7 +107,7 @@ if __name__ == "__main__":
     print(f1(), f2(4), f3(5, 7))
 ```
 
-Aahh. This should print out `13, 19, 38` instead of `10, 16, 35`. Cool! Can we go one step ahead, and implement a generic decorator `add_n`,  where `n` is a parameter or something. If you sense another level of nested functions, you are absolutely right.
+Aahh. This should print out `13, 19, 38` instead of `10, 16, 35`. Cool! Can we go one step ahead, and implement a generic decorator `add_n`,  where `n` is a parameter or something? If you sense another level of nested functions, you are absolutely right.
 
 ```python
 def add(n):
@@ -133,9 +133,9 @@ if __name__ == "__main__":
     print(f1(), f2(4), f3(5, 7))
 ```
 
-This should print out `15, 26, 55`. Hope you got a feel about decorators in this post. This code example didn't really talk about the real benefits of using decorators, we can save that discussion for some other day. If you are impatient, have a look at [Flash](http://flask.pocoo.org) for a very practical (and perhaps the most popular) example on using decorators in real life. Decorators is also used in the [mock](http://mock.readthedocs.org/en/latest/patch.html) library. Hmm, I might as well talk about unit testing and mocking in a subsequent post.
+This should print out `15, 26, 55`. This code example doesn't really talk about the real world usage of decorators; we can save that discussion for some other day. If you are impatient, have a look at [Flash](http://flask.pocoo.org) & [mock](http://mock.readthedocs.org/en/latest/patch.html) for very practical (and perhaps the most popular) examples on using decorators in real life.
 
-Anyways, that is all that I have to say about decorators today. But here is a bonus section. Sit back for just a while. We talked about `*args`, `**kwargs` in the code snippets above. If you are not familiar with them yet, read on.
+That is all that I have to say about decorators today. But here is a bonus section. Sit back for just a while! We talked about `*args`, `**kwargs` in the code snippets above. If you are not familiar with them yet, read on.
 
 ## Argument Passing
 
