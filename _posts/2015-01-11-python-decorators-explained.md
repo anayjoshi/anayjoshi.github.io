@@ -1,9 +1,10 @@
 ---
-a: Python Decorators Explained
+title: Python Decorators Explained
 category: posts
 layout: post
 permalink: blog/python-decorators-explained
 summary: On decorators, one of the better concepts in Python
+tags: python software
 ---
 
 There is something sanctimonious about functional programming. The functional approach to solve a problem just seems the holier way to write code. Python has been my default scripting language for quite sometime now, and fortunately, it is loaded well enough with functional tools to keep me happy. One of which, **decorators**, is the subject of today's discussion. I like to think of decorators as a tool for abstracting out common code. If you want to extract out common functionality from a family of functions to keep your code [DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself), decorators might just be the right fit. Lets look at a simple example, shall we?

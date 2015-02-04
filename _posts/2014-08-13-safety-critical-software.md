@@ -4,6 +4,7 @@ category: posts
 layout: post
 permalink: blog/safety-critical-software
 summary: When good software isn't good enough!
+tags: software
 ---
 
 Let me start off by insulting myself. I have been programming for about 3 years now, and I can confidently say that I have not yet written a bug free piece of software spanning more than 100 lines. That's quite a bad track record, I can hear you say .. but don't judge me yet! Most application domains would be happy to run my programs, but I would suggest you not to board an airplane running my firmware! The jump between *good software*, and *safety critical software* is much larger than what one would presume.

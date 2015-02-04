@@ -4,6 +4,7 @@ category: posts
 layout: post
 permalink: blog/my-story-with-haskell
 summary: On how this language changed the way I program
+tags: haskell software
 ---
 ![Haskell Logo](/img/haskell-logo.png)
 
