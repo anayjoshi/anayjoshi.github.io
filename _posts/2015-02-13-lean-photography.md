@@ -3,7 +3,7 @@ title: Lean Photography
 category: posts
 layout: post
 permalink: blog/lean-photography
-summary: Minimizng waste by refusing to say cheese!
+summary: Tourist. Camera. Click. Dump.
 ---
 
 I like travelling as a tourist, and I like it enough to make me move around with wide open eyes. Usually, and happily, I have a bunch of family members to give me some company in these tours. All of us carry with us our own cameras and all of us want to take back home memories of the beautiful present, to relive the tour .. and hence, we **click**, a thousand times, with every single camera. Once the tour is done, we sit down to sort out the photographs and neatly compile them. I so love the experience of sorting the photos! **No**. 
