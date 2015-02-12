@@ -1,0 +1,16 @@
+digraph
+{
+	node[shape="rectangle"] tour_begins[label="Tour Begins"]	
+							tour_ends[label="Tour Ends"]
+							moment[label="Moment worth\ncapturing"]
+							click[label="Click photos"]
+							filter[label="Filter Photos"]
+							good_photos[label="Good Photos"]
+
+	tour_begins -> moment;
+	moment -> click
+	click -> moment
+	click -> tour_ends
+	tour_ends -> filter
+	filter -> good_photos
+}

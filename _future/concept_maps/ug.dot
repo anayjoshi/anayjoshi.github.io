@@ -1,0 +1,64 @@
+digraph
+{
+	node[shape="rectangle"] linear_algebra[label="Linear\nAlgebra"]
+							ode[label="ODE"]
+							numerical_integration[label="Numerical\nIntegration"]
+							s_plane[label="S Plane"]
+							electricity_and_magnetism[label="Electricity\nand\nMagnetism"]
+
+							signal_processing[label="Signal\nProcessing"]
+							digital_signal_processing[label="Digital\nSignal\nProcessing"]
+							control_systems[label="Control\nSystems"]
+							digital_control_systems[label="Digital\nControl\nSystems"]
+							circuit_analysis[label="Circuit\nAnalysis"]
+							analog_electronics[label="Analog\nElectronics"]
+							power_electronics[label="Power\nElectronics"]
+							digital_electronics[label="Digital\nElectronics"]
+							electrical_machines[label="Electrical\nMachines"]
+							power_systems[label="Power\nSystems"]
+							microcontrollers[label="Microcontrollers"]
+
+							software_engineering[label="Software\nEngineering"]
+							embedded_systems[label="Embedded\nSystems"]
+							energy[label="Energy"]
+
+
+
+
+	linear_algebra -> signal_processing;
+	
+	linear_algebra -> control_systems;
+	ode -> control_systems;
+	s_plane -> control_systems;
+
+	linear_algebra -> circuit_analysis;
+	ode -> circuit_analysis;
+	numerical_integration -> circuit_analysis;
+
+	control_systems -> digital_control_systems;
+	signal_processing -> digital_signal_processing;
+
+	s_plane -> analog_electronics;
+	circuit_analysis -> analog_electronics;
+	control_systems -> analog_electronics;
+	signal_processing -> analog_electronics;
+
+	analog_electronics -> power_electronics;
+
+	electricity_and_magnetism -> electrical_machines;
+
+	power_electronics -> electrical_machines;
+	electrical_machines -> power_electronics;
+
+	software_engineering -> embedded_systems;
+	digital_signal_processing -> embedded_systems;
+	digital_control_systems -> embedded_systems;
+	digital_electronics -> embedded_systems;
+	analog_electronics -> embedded_systems;
+	microcontrollers -> embedded_systems;
+
+	power_electronics -> energy;
+	embedded_systems -> energy;
+	power_systems -> energy;
+	electrical_machines -> energy;
+}

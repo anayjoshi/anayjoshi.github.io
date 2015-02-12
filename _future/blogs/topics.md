@@ -1,0 +1,2 @@
+- lean photography
+- importance of key terms (topology, ring unit )
