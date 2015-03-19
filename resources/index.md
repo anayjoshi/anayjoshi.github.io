@@ -15,6 +15,8 @@ This page lists some quality technical resources on Mathematics, Electronics and
 - [Youtube channel](https://www.youtube.com/user/ControlLectures) on Control Systems by Brian Douglas
 - [The Art of Electronics](http://en.wikipedia.org/wiki/The_Art_of_Electronics), the single most important text for Electronic Engineers
 - [Signal Processing for Communications](http://www.sp4comm.org), the best text on signal processing I have ever read
+- [All About Electronics](http://www.allaboutcircuits.com/), a good online 'textbook' to get one started in Electrical Engineering
+- [Electronics Tutorials](http://www.electronics-tutorials.ws/), a fine collection of articles
 
 ### Embedded Software
 
@@ -33,4 +35,5 @@ This page lists some quality technical resources on Mathematics, Electronics and
 - [Problem Solving Strategies](http://www.amazon.in/Problem-Solving-Strategies-Problem-Books-Mathematics/dp/0387982191) book by Arthur Engel, on Math Olympiad training
 - [Project Euler](https://projecteuler.net/): a beautiful collection of problems (math + cs)
 - [Men of Mathematics](): a treatise on the history of mathematics
+- [What is Mathematics](): a must read book to get an overview of the beauty of Mathematics.
 
