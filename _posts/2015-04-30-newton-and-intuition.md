@@ -2,7 +2,7 @@
 title: Newton and Intuition
 category: posts
 layout: post
-permalink: blog/intuition-breakdown
+permalink: blog/newton-and-intuition
 summary: Our intuition is not as reliable as we intuitivel think it is!
 ---
 
