@@ -7,41 +7,30 @@ tags: numbers
 
 ---
 
-**[RMO-2005]**: *If \\(x\\), \\(y\\) are integers and 17 divides both the expressions \\(x^2 - 2xy + y^2 - 5x + 7y\\) & \\(x^2 - 3xy + 2y^2 + x - y\\), then prove that 17 divides \\(xy - 12x + 15y\\)*
+**[RMO-1992]:** *Determine the set of integers n for which \\(n^2 + 19n + 92\\) is a perfect square*
 
 ---
 
 **Solution**
 
+Say \\(n^2 + 19n + 92 = m^2\\)
 
-$$x^2 - 3xy + 2y^2 + x - y \equiv 0\;mod\;17$$
+Substitute \\(k = n-9\\)
 
-$$=> (x-y)(x - 2y + 1) \equiv 0\;mod\;17$$
+$$n^2 + 19n + 92 = k^2 + k + 2 = m^2$$
 
-**Case 1:** \\(x \equiv y\;mod\;17\\)
+$$=> \left(k + \frac{1}{2}\right)^2 + \frac{7}{4} = m^2$$
 
-Since 
+$$=> m^2 - \left(k + \frac{1}{2}\right)^2 = \frac{7}{4}$$
 
-$$x^2 - 2xy + y^2 - 5x + 7y \equiv 0\;mod\;17$$
+$$=> \left(m - k - \frac{1}{2}\right)\left(m + k + \frac{1}{2}\right) = \frac{7}{4}$$
 
-$$=> y^2 - 2y^2 + y^2 - 5y + 7y \equiv 0\;mod\;17$$
+$$=> (2m - 2k -1)(2m + 2k + 1) = 7$$
 
-$$=> y \equiv 0\;mod\;17 \text{ and } x \equiv 0\;mod\;17$$
+Since the 7 is a prime number, there are only two possibilities for the above case
 
-In this case, \\(xy - 12x + 15y\\) is divisible by 17 since \\(x\\) and \\(y\\) are individualy divisible by 17.
+**Case 1:** \\(2m - 2k - 1 = 1 \text{ and } 2m + 2k + 1 = 7\\)
 
-**Case 2:** \\(x \equiv 2y - 1\;mod\;17\\)
+**Case 2:** \\(2m - 2k - 1 = 7 \text{ and } 2m + 2k + 1 = 1\\)
 
-Since 
-
-$$x^2 - 2xy + y^2 - 5x + 7y \equiv 0\;mod\;17$$
-
-$$=> (2y-1)^2 - 2y^2 + y^2 - 5(2y-1) + 7y \equiv 0\;mod\;17$$
-
-$$=> (y-2)(y-3) \equiv 0\;mod\;17$$
-
-**Case 2a**: \\(y \equiv 2\;mod\;17 \text{ and } x \equiv 3\;mod\;17\\)
-
-**Case 2b**: \\(y \equiv 3\;mod\;17 \text{ and } x \equiv 5\;mod\;17\\)
-
-Both cases can be individually substituted in \\((xy - 12x + 5y)\\) and verified that the expression in \\((0\;mod\;17)\\)
+The first case gives the solution \\((m = 2, k = 1)\\). The second case gives the solution \\((m = 2, k = -2)\\). Thus, the only values for \\(n\\) for which \\(n^2 + 19n + 92\\) is a perfect square are \\(-8\\) and \\(-11\\)
