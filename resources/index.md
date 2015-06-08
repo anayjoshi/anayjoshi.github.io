@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Resouces"
+title: "Web Resouces"
 cover: "/img/exclamation.png"
 ---
 
@@ -34,6 +34,5 @@ This page lists some quality technical resources on Mathematics, Electronics and
 
 - [Problem Solving Strategies](http://www.amazon.in/Problem-Solving-Strategies-Problem-Books-Mathematics/dp/0387982191) book by Arthur Engel, on Math Olympiad training
 - [Project Euler](https://projecteuler.net/): a beautiful collection of problems (math + cs)
-- [Men of Mathematics](): a treatise on the history of mathematics
-- [What is Mathematics](): a must read book to get an overview of the beauty of Mathematics.
+- [What is Mathematics](http://www.amazon.com/Mathematics-Elementary-Approach-Ideas-Methods/dp/0195105192) provides a bird's eye view of various branches of mathematics
 

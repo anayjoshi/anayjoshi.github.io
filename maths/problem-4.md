@@ -5,6 +5,8 @@ cover: "/img/exclamation.png"
 tags: geometry
 ---
 
+---
+
 **[INMO-1995]**: In an acute-angled traingle \\(ABC\\), \\(\angle A = 30^0\\), \\(H\\) is the orthocentre, and \\(M\\) is the midpoint of \\(BC\\). On the line \\(HM\\), take a point \\(T\\) such that \\(HM = MT\\). Show that \\(AT = 2BC\\).
 
 ---
