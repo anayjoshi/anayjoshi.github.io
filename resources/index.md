@@ -36,3 +36,7 @@ This page lists some quality technical resources on Mathematics, Electronics and
 - [Project Euler](https://projecteuler.net/): a beautiful collection of problems (math + cs)
 - [What is Mathematics](http://www.amazon.com/Mathematics-Elementary-Approach-Ideas-Methods/dp/0195105192) provides a bird's eye view of various branches of mathematics
 
+### Blogs I follow
+
+- [Wait But Why](http://waitbutwhy.com/)
+
