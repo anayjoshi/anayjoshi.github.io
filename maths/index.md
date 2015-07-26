@@ -16,5 +16,5 @@ cover: "/img/exclamation.png"
 
 [Problem #5](problem-5): **[INMO-1996]** Define a sequence \\(a_n\\) by \\(a_1 = 1, a_2 = 2\\), and \\(a_{n+2} = 2a_{n+1} - a_n + 2\\) for \\(n >= 1\\). Prove that for any \\(m\\), \\(a_m a_{m+1}\\) is also a term in the sequence.
 
-[Problem #6](problem-6): **[Tournament of the Towns]** The sequence \\(a_n\\) is defined as follows: \\(a_0 = 9\\), \\(a_{n+1} = 3a^4 + 4a^3\\) for \\(n > 0\\). Show that \\(a_{10}\\) contains more than \\(1000\\) nines in decimal notation.
+[Problem #6](problem-6): **[Tournament of the Towns]** The sequence \\(a_n\\) is defined as follows: \\(a_0 = 9\\), \\(a_{n+1} = 3{a_n}^4 + 4{a_n}^3\\) for \\(n > 0\\). Show that \\(a_{10}\\) contains more than \\(1000\\) nines in decimal notation.
 

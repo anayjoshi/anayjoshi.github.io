@@ -7,7 +7,7 @@ tags: numbers
 
 ---
 
-**[Tournament of the Towns]**: The sequence \\(a_n\\) is defined as follows: \\(a_0 = 9\\), \\(a_{n+1} = 3a^4 + 4a^3\\) for \\(n > 0\\). Show that \\(a_{10}\\) contains more than \\(1000\\) nines in decimal notation.
+**[Tournament of the Towns]**: The sequence \\(a_n\\) is defined as follows: \\(a_0 = 9\\), \\(a_{n+1} = 3{a_n}^4 + 4{a_n}^3\\) for \\(n > 0\\). Show that \\(a_{10}\\) contains more than \\(1000\\) nines in decimal notation.
 
 ---
 
