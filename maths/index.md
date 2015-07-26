@@ -14,7 +14,7 @@ cover: "/img/exclamation.png"
 
 [Problem #4](problem-4): **[INMO-1995]** In an acute-angled traingle \\(ABC\\), \\(\angle A = 30^0\\), \\(H\\) is the orthocentre, and \\(M\\) is the midpoint of \\(BC\\). On the line \\(HM\\), take a point \\(T\\) such that \\(HM = MT\\). Show that \\(AT = 2BC\\).
 
-[Problem #5](problem-5): **[INMO-1996]**: Define a sequence \\(a_n\\) by \\(a_1 = 1, a_2 = 2\\), and \\(a_{n+2} = 2a_{n+1} - a_n + 2\\) for \\(n >= 1\\). Prove that for any \\(m\\), \\(a_m a_{m+1}\\) is also a term in the sequence.
+[Problem #5](problem-5): **[INMO-1996]** Define a sequence \\(a_n\\) by \\(a_1 = 1, a_2 = 2\\), and \\(a_{n+2} = 2a_{n+1} - a_n + 2\\) for \\(n >= 1\\). Prove that for any \\(m\\), \\(a_m a_{m+1}\\) is also a term in the sequence.
 
-[Problem #6](problem-6): **[Tournament of the Towns]**: The sequence \\(a_n\\) is defined as follows: \\(a_0 = 9\\), \\(a_{n+1} = 3a^4 + 4a^3\\) for \\(n > 0\\). Show that \\(a_{10}\\) contains more than \\(1000\\) nines in decimal notation.
+[Problem #6](problem-6): **[Tournament of the Towns]** The sequence \\(a_n\\) is defined as follows: \\(a_0 = 9\\), \\(a_{n+1} = 3a^4 + 4a^3\\) for \\(n > 0\\). Show that \\(a_{10}\\) contains more than \\(1000\\) nines in decimal notation.
 
