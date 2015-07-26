@@ -134,7 +134,7 @@ if __name__ == "__main__":
     print(f1(), f2(4), f3(5, 7))
 ```
 
-This should print out `15, 26, 55`. This code example doesn't really talk about the real world usage of decorators; we can save that discussion for some other day. If you are impatient, have a look at [Flash](http://flask.pocoo.org) & [mock](http://mock.readthedocs.org/en/latest/patch.html) for very practical (and perhaps the most popular) examples on using decorators in real life.
+This should print out `15, 26, 55`. This code example doesn't really talk about the real world usage of decorators; we can save that discussion for some other day. If you are impatient, have a look at [Flask](http://flask.pocoo.org) & [mock](http://mock.readthedocs.org/en/latest/patch.html) for very practical (and perhaps the most popular) examples on using decorators in real life.
 
 That is all that I have to say about decorators today. But here is a bonus section. Sit back for just a while! We talked about `*args`, `**kwargs` in the code snippets above. If you are not familiar with them yet, read on.
 

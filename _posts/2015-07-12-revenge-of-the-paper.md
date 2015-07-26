@@ -22,7 +22,7 @@ Recently, with my new job, I kick started my career into industrial research. No
 
 ![Angry I](/img/paper-notebook-angry.png)
 
-Allright that might be a slight exagerration, but you get the point. With all my love for digital notebooks, I just couldn't resist the temptation for the touch of a paper - that indescribable freedom which only a paper and pen can give. In early July, I cheated on the digital world - and bought myself these wonderful creation of mankind
+Allright that might be a slight exagerration, but you get the point. With all my love for digital notebooks, I just couldn't resist the temptation for the touch of paper - that indescribable freedom which only a paper and pen can give. In early July, I cheated on the digital world - and bought myself these wonderful creation of mankind
 
 ![Paper Notebooks](/img/paper-notebook-books.png)
 
