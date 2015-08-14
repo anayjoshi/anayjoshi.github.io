@@ -3,7 +3,7 @@ title: Replicating the Wheel
 category: posts
 layout: post
 permalink: blog/replicating-the-wheel
-summary: because reinventing is too mainstream
+summary: Because reinventing is too mainstream
 ---
 
 > **Reinventing the Wheel** is almost always used with a negative connotation. But does a manual on *"All About Wheels"* impart the same intellectual understanding as *reinventing the wheel itself*?
