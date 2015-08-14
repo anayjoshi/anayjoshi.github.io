@@ -1,0 +1,13 @@
+digraph
+{
+	node[shape="oval"] experiment[label="Experiment"];
+	node[shape="oval"] stumble[label="Stumble across\n unseen behaviour"];
+	node[shape="oval"] theory[label="Hypothesize a theory"];
+	node[shape="oval"] richer_you[label="Richer You (Probably)"];
+
+
+    experiment -> stumble
+    stumble -> theory;
+    theory -> richer_you;
+    richer_you -> experiment;
+}

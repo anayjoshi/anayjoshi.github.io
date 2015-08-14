@@ -17,11 +17,13 @@ This page lists some quality technical resources on Mathematics, Electronics and
 - [Signal Processing for Communications](http://www.sp4comm.org), the best text on signal processing I have ever read
 - [All About Electronics](http://www.allaboutcircuits.com/), a good online 'textbook' to get one started in Electrical Engineering
 - [Electronics Tutorials](http://www.electronics-tutorials.ws/), a fine collection of articles
+- [w2aew](https://www.youtube.com/channel/UCiqd3GLTluk2s_IBt7p_LjA), another amazing YouTube channel
 
 ### Embedded Software
 
 - [Articles](http://www.barrgroup.com/Embedded-Systems/How-To) on Embedded Software by Barr Group
 - [Introduction to Embedded Systems](http://leeseshia.org/) book by Lee and Sheshia
+- [The Pragmatic Programmer]() - one of the *epics* in the art of engineering programs.
 
 ### Computer Science
 
@@ -36,7 +38,7 @@ This page lists some quality technical resources on Mathematics, Electronics and
 - [Project Euler](https://projecteuler.net/): a beautiful collection of problems (math + cs)
 - [What is Mathematics](http://www.amazon.com/Mathematics-Elementary-Approach-Ideas-Methods/dp/0195105192) provides a bird's eye view of various branches of mathematics
 
-### Blogs I follow
+### Physics
 
-- [Wait But Why](http://waitbutwhy.com/)
+- [Vertasium]()
 

@@ -1,0 +1,22 @@
+digraph
+{
+	node[shape="oval"] experiment[label="Experiment"];
+	node[shape="oval"] stumble[label="Stumble across\n unseen behaviour"];
+	node[shape="oval"] motivation[label="Motivation to \nopen Books"];
+	node[shape="oval"] books[label="Actually open books!"];
+	node[shape="oval"] hypothesis[label="Hypothesize a theory"];
+	node[shape="oval"] richer_you[label="Richer You (More Probably)"];
+
+    {rank=same; books hypothesis}
+
+
+    experiment -> stumble
+    stumble -> motivation;
+    motivation -> books;
+    stumble -> hypothesis;
+    hypothesis -> richer_you;
+    books -> richer_you;
+    books -> hypothesis;
+    hypothesis -> books;
+    richer_you -> experiment;
+}

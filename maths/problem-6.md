@@ -29,4 +29,4 @@ $$=> a_{n+1} = 3p^4 10^{4q} - 8p^3 10^{3q} + 6p^2 10^{2q} - 1$$
 
 $$=> a_{n+1} = (3p^4 10^{2q} - 8p^3 10^{q} + 6p^2 10^{2q})10^{2q} - 1$$
 
-Thus, if \\(a_n \equiv -1 \text{ mod } 10^q\\) then \\(a_{n+1} \equiv 1 \text{ mod } 10^{2q}\\), which by induction implies \\(a_{10} \equiv -1 \text{ mod } 10^{1024}\\), hence completing out proof.
+Thus, if \\(a_n \equiv -1 \text{ mod } 10^q\\) then \\(a_{n+1} \equiv 1 \text{ mod } 10^{2q}\\), which by induction implies \\(a_{10} \equiv -1 \text{ mod } 10^{1024}\\), hence completing our proof.
