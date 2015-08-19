@@ -6,7 +6,7 @@ permalink: blog/notes-on-opamp-bandwidth
 summary: A small pocket reference on understanding Opamp's Gain Bandwidth Product
 ---
 
-Opamp datasheets usually provide certain parameters to specify the frequency response of the opamp. This post tries to jot my understanding of the topic down for future reference. Here, we would try to make sense out of the terms such as `Unity Gain Bandwidth`, `Gain Bandwidth Product` etc. 
+Opamp datasheets usually provide certain parameters to specify the frequency response of the opamp. An often misunderstood spec is on the `Gain Bandwidth Product`. I would try to elucidate the specification today. 
 
 The transfer function of a typical opamp has a real dominant pole at a fairly low frequency (a few Hertz). The opamp's transfer function can be approximated by:
 
@@ -18,7 +18,7 @@ $$A =  \frac{A_0}{\sqrt{1 + (\omega / \omega_0)^2}}$$
 
 $$\text{For}\quad \omega >> \omega_0 \text{,}\quad  A \approx \frac{A_0}{\omega / \omega_0} => A \omega = A_0 \omega_0 = \text{GBWP}$$
 
-*Gain Bandwidth Product* is usually defined for dominant pole compensated opamps. For frequencies beyond \\(-3dB\\) frequency (\\(\omega_0\\)), the product of gain and frequency is constant. *Unity Bandwidth* Product and *Gain Bandwidth Product* have the same value for a dominant pole compensated opamp. ie, \\(GBWP = A_0 \omega_0\\). Shown below is the Bode plot of the frequency response of the opamp discussed above.
+***Gain Bandwidth Product* is usually defined for dominant pole compensated opamps**. For frequencies beyond \\(-3dB\\) frequency (\\(\omega_0\\)), the product of gain and frequency is constant. *Unity Gain Bandwidth* and *Gain Bandwidth Product* have the same value for a dominant pole compensated opamp. ie, \\(GBWP = A_0 \omega_0\\). Shown below is the Bode plot of the frequency response of the opamp discussed above.
 
 ![](/img/opamp_bandwidth/gbwp_bode_plot.png)
 

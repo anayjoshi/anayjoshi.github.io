@@ -8,7 +8,7 @@ summary: A sequel to one of my earlier posts on Digital Notebooks
 
 > It all started with my desire to store useful knowledge in a portable, future proof locker - so that an older version of myself could revisit this **knowledge repository** and avoid rediscovery. In the fag end of 2013, I was celebrating [Digital Notebooks](/blog/digital-notebooks) for all the claps it truely deserved. Today, in a *sequel* to that post, Paper Notebooks fight back. Would paper have the last laugh? 
 
-For most of my engineering career until recently, I was developing software/firmware. When I was introduced to digital notekeeping on [Evernote](http://www.evernote.com) (and later [Simplenote](http://www.simplenote.com)), I had gone all nuts - happily jumping around my house. It was **perfectly** what I wanted back then for maintaining my notes.
+For most of my engineering career until recently, I was developing software/firmware. When I was introduced to digital notekeeping on [Evernote](http://www.evernote.com) (and later [Simplenote](http://www.simplenote.com)), I had gone all nuts - happily jumping around my house. It was **perfectly** what I wanted for maintaining my notes back then.
 
 Knowledge repositories for Software Engineering requires mainly text. Yup it does require visual aids - state machine diagrams, flowcharts etc., but these are standard visuals. Tools such as [GraphViz](http://www.graphviz.com) can take in text and autogenerate these images. Piece of cake. So back when I was primarily writing code and using digital notebooks for building my knowledge repository, I was something like this
 

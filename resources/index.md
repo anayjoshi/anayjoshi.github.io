@@ -18,6 +18,7 @@ This page lists some quality technical resources on Mathematics, Electronics and
 - [All About Electronics](http://www.allaboutcircuits.com/), a good online 'textbook' to get one started in Electrical Engineering
 - [Electronics Tutorials](http://www.electronics-tutorials.ws/), a fine collection of articles
 - [w2aew](https://www.youtube.com/channel/UCiqd3GLTluk2s_IBt7p_LjA), another amazing YouTube channel
+- [Texas Instrument's YouTube Channel](https://www.youtube.com/user/texasinstruments/playlists): These are basically video versions of application notes. Highly informative!
 
 ### Embedded Software
 
