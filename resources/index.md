@@ -41,5 +41,5 @@ This page lists some quality technical resources on Mathematics, Electronics and
 
 ### Physics
 
-- [Vertasium]()
-
+- [Feynman's Lectures](http://www.feynmanlectures.caltech.edu/): A legendary collection of notes on lectures given by Mr. Feynman.
+- [Vertasium](https://www.youtube.com/user/1veritasium): A YouTube channel on interesting demonstration of physics concepts.
