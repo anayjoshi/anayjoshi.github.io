@@ -18,6 +18,9 @@ production_url:      http://anayjoshi.com
 baseurl:             /
 paginate:            100
 
+site:
+	baseurl: /
+
 # About/contact
 author:
   name:              Anaykumar Joshi
