@@ -6,7 +6,7 @@ permalink: blog/lean-photography
 summary: Tourist. Camera. Click. Dump.
 ---
 
-> I like travelling. Happily, in most of these tours, I have a bunch of family members to give me company. All of us carry our own cameras and all of us want to take back home memories of the supposedly beautiful present, to re-live the tour ... and hence, we **click**, a thousand times, with every single camera. Once the tour is done, we sit down to sort out the photographs and neatly compile them. I so love the experience of sorting the photos! **No**. 
+> I like travelling. Happily, in most of these tours, I have a bunch of friends/family-members to give me company. All of us carry our own cameras and all of us want to take back home memories of the supposedly beautiful present, to re-live the tour ... and hence, we **click**, a thousand times, with every single camera. Once the tour is done, we sit down to sort out the photographs and neatly compile them. I so love the experience of sorting the photos! **No**. 
 
 Here is how we normally go about the photo clicking routine during a tour.
 

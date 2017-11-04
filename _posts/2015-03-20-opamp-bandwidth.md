@@ -6,7 +6,7 @@ permalink: blog/notes-on-opamp-bandwidth
 summary: A small pocket reference on understanding Opamp's Gain Bandwidth Product
 ---
 
-Opamp datasheets usually provide certain parameters to specify the frequency response of the opamp. An often misunderstood spec is on the `Gain Bandwidth Product`. I would try to elucidate the specification today. 
+Opamp datasheets usually provide certain parameters to specify the frequency response of the opamp. An often misunderstood spec is on the `Gain Bandwidth Product`. I have traditionally had a poor understanding of this subject matter; hope this post helps clear things up for those in similar shoes.
 
 The transfer function of a typical opamp has a real dominant pole at a fairly low frequency (a few Hertz). The opamp's transfer function can be approximated by:
 
@@ -63,7 +63,7 @@ Say we have a specific opamp with a \\(1 MHz\\) GBWP. If we were to use this opa
 $$100 \sqrt{2^{-1/3} - 1} \: kHz \approx 51 \: kHz$$
 
 
-That's it for today! I traditionally had a pretty poor understanding of this subject matter; hope this post helps clear things up for those in similar shoes!
+That's it for today! 
 
 
 
